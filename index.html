@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags specifying character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Linking an external stylesheet for styling -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+    <!-- Page title displayed on the browser tab -->
+    <title>Weather Web App</title>
+</head>
+<body>
+    <!-- Page header -->
+    <header>
+        <h1>Weather Web App</h1>
+    </header>
+    
+    <!-- Main content container -->
+    <main class="weather-container">
+        <!-- Weather location search section -->
+        <div class="location-search">
+            <!-- Search input and button container -->
+            <div class="search-bar">
+                <!-- User input field for location -->
+                <input type="text" placeholder="Enter a location" id="search-bar">
+                
+                <!-- Button to trigger weather data search -->
+                <button id="search-btn">Search</button>
+            </div>
+            
+            <!-- Display area for weather information -->
+            <div class="weather-info">
+                <!-- Location name -->
+                <h2 id="location"></h2>
+                
+                <!-- Weather condition icon -->
+                <img id="weather-icon" src="">
+                
+                <!-- Description of weather condition -->
+                <p id="condition"></p>
+                
+                <!-- Temperature information -->
+                <p id="temperature"></p>
+                
+                <!-- Humidity information -->
+                <p id="humidity"></p>
+                
+                <!-- Wind speed information -->
+                <p id="wind"></p>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Page footer -->
+    <footer>
+        <!-- Copyright notice -->
+        <p>Weather Web App &copy; CCL</p>
+    </footer>
+    
+    <!-- Linking an external JavaScript file for interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>

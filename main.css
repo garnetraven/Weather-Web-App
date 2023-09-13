@@ -1,0 +1,108 @@
+/* Variables */
+:root {
+    --primary-color: #7CB9E8;
+    --secondary-color: #2980B9;
+}
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles for all screen sizes */
+body {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Common header and footer styles */
+header, footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Main content container */
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+
+/* Location search box */
+.location-search {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F0F8FF;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Weather info styles */
+.weather-info {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Search bar and button styles */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+img {
+    height: 50px;
+    width: 50px;
+}
+
+/* Media queries for responsive design */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .weather-container {
+        flex-direction: column;
+    }
+
+    .location-search,
+    .weather-details {
+        width: 100%;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
