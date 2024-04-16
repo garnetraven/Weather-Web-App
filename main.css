@@ -1,17 +1,14 @@
-/* Variables */
 :root {
     --primary-color: #7CB9E8;
     --secondary-color: #2980B9;
 }
 
-/* Reset some default browser styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Base styles for all screen sizes */
 body {
     background-color: var(--primary-color);
     display: flex;
@@ -22,14 +19,43 @@ body {
     align-items: center;
 }
 
-/* Common header and footer styles */
 header, footer {
     background-color: var(--primary-color);
     text-align: center;
     padding: 20px 0;
 }
 
-/* Main content container */
+nav {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+}
+  
+
 .weather-container {
     display: flex;
     justify-content: center;
@@ -38,7 +64,6 @@ header, footer {
     max-width: 80%;
 }
 
-/* Location search box */
 .location-search {
     width: 100%;
     box-sizing: border-box;
@@ -48,14 +73,12 @@ header, footer {
     border-radius: 10px;
 }
 
-/* Weather info styles */
 .weather-info {
     margin-top: 20px;
     padding: 20px;
     text-align: center;
 }
 
-/* Search bar and button styles */
 .search-bar {
     display: flex;
     align-items: center;
@@ -78,14 +101,12 @@ button {
     color: #FFFFFF;
     cursor: pointer;
 }
+
 img {
     height: 50px;
     width: 50px;
 }
 
-/* Media queries for responsive design */
-
-/* For screens smaller than 768px */
 @media (max-width: 768px) {
     .weather-container {
         flex-direction: column;
